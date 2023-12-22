@@ -22,8 +22,15 @@ a {
   a {
     color: #24292e;
     transition: all 0.3s;
+
     &:hover {
       font-size: 45px;
+    }
+  }
+  @include pc(sm) {
+    a {
+      color: red;
+      font-size: 30px;
     }
   }
 }
@@ -35,7 +42,7 @@ a {
   justify-content: space-between;
   margin: 0 auto;
   padding: 0 4%;
-  height: 170px;
+  height: 110px;
 
   ul {
     display: flex;

@@ -23,6 +23,12 @@ a {
 .site-title a:hover {
   font-size: 45px;
 }
+@media screen and (max-width: 399px) {
+  .site-title a {
+    color: red;
+    font-size: 30px;
+  }
+}
 
 .header {
   max-width: 960px;
@@ -31,7 +37,7 @@ a {
   justify-content: space-between;
   margin: 0 auto;
   padding: 0 4%;
-  height: 170px;
+  height: 110px;
 }
 .header ul {
   display: flex;
