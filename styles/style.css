@@ -87,7 +87,7 @@ a {
 body {
   width: 100%;
   height: 100vh;
-  overflow: hidden;
+  overflow: auto;
 }
 
 main {
@@ -110,6 +110,14 @@ main {
   border-radius: 10px;
   margin-right: 20px;
   position: relative;
+}
+@media screen and (max-width: 399px) {
+  .content .leftContent {
+    position: absolute;
+    width: 270px;
+    top: 130px;
+    height: 240px;
+  }
 }
 .content .leftContent h2 {
   color: #e5edf1;
@@ -135,14 +143,6 @@ main {
     top: 20px;
     right: 15px;
     font-size: 20px;
-  }
-}
-@media screen and (max-width: 399px) {
-  .content .leftContent {
-    position: absolute;
-    width: 270px;
-    top: 130px;
-    height: 280px;
   }
 }
 .content .rightContent {
