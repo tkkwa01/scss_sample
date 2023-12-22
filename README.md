@@ -25,7 +25,7 @@ h3 {
     color: red;
     font-size: 1.4rem;
     
-    @include media(md) {
+    @include mq(md) {
 	color: blue;
 	font-size: 1.6rem;
     }

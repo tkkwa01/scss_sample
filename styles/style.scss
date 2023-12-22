@@ -25,13 +25,15 @@ a {
 
     &:hover {
       font-size: 45px;
+      @include pc(sm) {
+        font-size: 35px;
+      }
     }
   }
+
   @include pc(sm) {
-    a {
-      color: red;
-      font-size: 30px;
-    }
+    line-height: 85px;
+    font-size: 30px;
   }
 }
 
@@ -43,6 +45,17 @@ a {
   margin: 0 auto;
   padding: 0 4%;
   height: 110px;
+
+  @include pc(sm) {
+    flex-direction: column;
+    height: 100px;
+  }
+
+  @include pc(sm) {
+    nav {
+      margin-top: -30px;
+    }
+  }
 
   ul {
     display: flex;
@@ -61,6 +74,12 @@ a {
       &:hover {
         opacity: 0.5;
         font-size: 25px;
+        @include pc(sm) {
+          font-size: 20px;
+        }
+      }
+      @include pc(sm) {
+        font-size: 15px;
       }
     }
   }
@@ -105,7 +124,22 @@ main {
       &:hover {
         font-size: 65px;
         color: $mainColor;
+        @include pc(sm) {
+          font-size: 25px;
+        }
       }
+      @include pc(sm) {
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        font-size: 20px;
+      }
+    }
+    @include pc(sm) {
+      position: absolute;
+      width: 270px;
+      top: 130px;
+      height: 280px;
     }
   }
   .rightContent {
@@ -117,6 +151,11 @@ main {
     padding: 15px;
     background-color: $rightContentColor;
 
+    @include pc(sm) {
+      height: 200px;
+      top: 40px;
+    }
+
     p {
       font-size: 17px;
       border-radius: 10px;
@@ -125,7 +164,7 @@ main {
       color: $leftTextColor;
       transition: all 0.2s;
       &:hover {
-        font-size: 25px;
+        font-size: 20px;
         color: $mainColor
       }
     }
@@ -143,8 +182,18 @@ main {
       transition: all 0.2s;
 
       &:hover {
-        font-size: 20px;
+        font-size: 25px;
         color: $mainColor;
+        @include pc(sm){
+          font-size: 18px;
+        }
+      }
+      @include pc(sm){
+        margin: auto;
+        top: 280px;
+        left: 0;
+        right: 0;
+        width: 90px;
       }
     }
   }

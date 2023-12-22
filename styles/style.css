@@ -24,8 +24,13 @@ a {
   font-size: 45px;
 }
 @media screen and (max-width: 399px) {
-  .site-title a {
-    color: red;
+  .site-title a:hover {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 399px) {
+  .site-title {
+    line-height: 85px;
     font-size: 30px;
   }
 }
@@ -38,6 +43,17 @@ a {
   margin: 0 auto;
   padding: 0 4%;
   height: 110px;
+}
+@media screen and (max-width: 399px) {
+  .header {
+    flex-direction: column;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 399px) {
+  .header nav {
+    margin-top: -30px;
+  }
 }
 .header ul {
   display: flex;
@@ -56,6 +72,16 @@ a {
 .header ul li:hover {
   opacity: 0.5;
   font-size: 25px;
+}
+@media screen and (max-width: 399px) {
+  .header ul li:hover {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 399px) {
+  .header ul li {
+    font-size: 15px;
+  }
 }
 
 body {
@@ -98,6 +124,27 @@ main {
   font-size: 65px;
   color: #ff7fd1;
 }
+@media screen and (max-width: 399px) {
+  .content .leftContent h2:hover {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 399px) {
+  .content .leftContent h2 {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 399px) {
+  .content .leftContent {
+    position: absolute;
+    width: 270px;
+    top: 130px;
+    height: 280px;
+  }
+}
 .content .rightContent {
   width: 300px;
   position: relative;
@@ -106,6 +153,12 @@ main {
   border-radius: 10px;
   padding: 15px;
   background-color: #4BCB25;
+}
+@media screen and (max-width: 399px) {
+  .content .rightContent {
+    height: 200px;
+    top: 40px;
+  }
 }
 .content .rightContent p {
   font-size: 17px;
@@ -116,7 +169,7 @@ main {
   transition: all 0.2s;
 }
 .content .rightContent p:hover {
-  font-size: 25px;
+  font-size: 20px;
   color: #ff7fd1;
 }
 .content .rightContent button {
@@ -132,8 +185,22 @@ main {
   transition: all 0.2s;
 }
 .content .rightContent button:hover {
-  font-size: 20px;
+  font-size: 25px;
   color: #ff7fd1;
+}
+@media screen and (max-width: 399px) {
+  .content .rightContent button:hover {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 399px) {
+  .content .rightContent button {
+    margin: auto;
+    top: 280px;
+    left: 0;
+    right: 0;
+    width: 90px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
